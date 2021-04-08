@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <EditText
+        android:id="@+id/firstNameTxtView"
+        android:layout_width="361dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/firstName"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lastNameTxtView"
+        android:layout_width="359dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/lastName"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/firstNameTxtView"
+        app:layout_constraintStart_toStartOf="@+id/firstNameTxtView"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameTxtView" />
+
+    <EditText
+        android:id="@+id/emailTxtView"
+        android:layout_width="355dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/firstNameTxtView"
+        app:layout_constraintStart_toStartOf="@+id/firstNameTxtView"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameTxtView" />
+
+    <EditText
+        android:id="@+id/choosePasswordTxtView"
+        android:layout_width="354dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/choosePassword"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/emailTxtView"
+        app:layout_constraintStart_toStartOf="@+id/emailTxtView"
+        app:layout_constraintTop_toBottomOf="@+id/emailTxtView" />
+
+    <EditText
+        android:id="@+id/repeatPasswordTxtView"
+        android:layout_width="347dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/repeatPassword"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/choosePasswordTxtView"
+        app:layout_constraintStart_toStartOf="@+id/choosePasswordTxtView"
+        app:layout_constraintTop_toBottomOf="@+id/choosePasswordTxtView" />
+
+    <Button
+        android:id="@+id/setUpsignUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeatPasswordTxtView" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setUpsignUpBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

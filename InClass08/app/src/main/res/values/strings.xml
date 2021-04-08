@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">InClass08</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="choosePassword">Choose Password</string>
+    <string name="repeatPassword">Repeat Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="sendTo">Send To:</string>
+    <string name="subjectKey">Subject</string>
+    <string name="message">Message</string>
+    <string name="sendKey">Send</string>
+</resources>
